@@ -22,5 +22,6 @@ services:
     volumes:
       - ./jupyter/notebooks:/home/jovyan/workspace
     command: start-notebook.py --NotebookApp.token=''
+    depends_on: ['iris']
 
 
