@@ -1,8 +1,8 @@
-version: '3.6'
+ 
 services:
   iris:
     build:
-      context: .
+      context: ./iris
       dockerfile: Dockerfile
       target: final
     restart: always
@@ -13,3 +13,14 @@ services:
       - 53773
     volumes:
       - ./:/home/irisowner/dev
+  jupyter:
+    build:
+      context: ./jupyter
+      dockerfile: Dockerfile
+    ports:
+      - 8889:8888
+    volumes:
+      - ./jupyter/notebooks:/home/jovyan/workspace
+    command: start-notebook.py --NotebookApp.token=''
+
+

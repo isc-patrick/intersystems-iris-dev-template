@@ -8,7 +8,7 @@
 		"../docker-compose.yml"
 	],
 
-	"service": "iris",
+	"service": "jupyter",
 
 	"workspaceFolder": "/home/irisowner/dev",
 
