@@ -12,7 +12,7 @@ services:
       - 52773
       - 53773
     volumes:
-      - ./:/home/irisowner/dev
+      - ./iris:/home/irisowner/dev
   jupyter:
     build:
       context: ./jupyter
