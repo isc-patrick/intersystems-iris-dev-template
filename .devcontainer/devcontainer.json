@@ -8,11 +8,11 @@
 		"../docker-compose.yml"
 	],
 
-	// "service": "iris",
-	// "workspaceFolder": "/home/irisowner/dev",
+	"service": "iris",
+	"workspaceFolder": "/home/irisowner/dev",
 
-	"service": "jupyter",
-	"workspaceFolder": "/jupyter/notebooks",
+	// "service": "jupyter",
+	// "workspaceFolder": "/jupyter/notebooks",
 
 	// This provides the elements of the connection object which require different values when connecting to the workspace within the container,
 	// versus those in .vscode/settings.json which apply when operating locally on the workspace files.
