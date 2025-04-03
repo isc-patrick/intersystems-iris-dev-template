@@ -50,4 +50,6 @@
 		"intersystems-community.servermanager",
 		"ms-vscode.docker"
 	],
+
+	"forwardPorts": [8889]
 }
