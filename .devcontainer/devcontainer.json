@@ -41,9 +41,10 @@
 					"intersystems-community.servermanager",
 					"ms-vscode.docker"
 				]
-			}
+			},
+			"python.defaultInterpreterPath": "/usr/irissys/bin/irispython"
 		}
-		"python.defaultInterpreterPath": "/usr/irissys/bin/irispython"
+		
 	},
 	// Add the IDs of extensions we want installed when the container is created.
 	// Currently (March 2022) `intersystems.language-server` fails to run within the container (alpine platform).
@@ -53,5 +54,4 @@
 	"forwardPorts": [
 		8889
 	]
-	
 }
