@@ -1,18 +1,18 @@
  
 services:
-  iris:
-    build:
-      context: ./iris
-      dockerfile: Dockerfile
-      target: final
-    restart: always
-    command: --check-caps false --ISCAgent false
-    ports:
-      - 1972
-      - 52773
-      - 53773
-    volumes:
-      - ./iris:/home/irisowner/dev
+  # iris:
+  #   build:
+  #     context: ./iris
+  #     dockerfile: Dockerfile
+  #     target: final
+  #   restart: always
+  #   command: --check-caps false --ISCAgent false
+  #   ports:
+  #     - 1972
+  #     - 52773
+  #     - 53773
+  #   volumes:
+  #     - ./iris:/home/irisowner/dev
   jupyter:
     build:
       context: ./jupyter
@@ -24,7 +24,7 @@ services:
         source: myapp
         target: /home/jovyan/workspace
     command: start-notebook.py --NotebookApp.token=''
-    depends_on: ['iris']
+    # depends_on: ['iris']
 
 volumes:
   myapp:
