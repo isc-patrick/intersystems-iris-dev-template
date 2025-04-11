@@ -52,8 +52,6 @@
 	// using its TextMate grammar for code coloring.
 	"forwardPorts": [
 		8889
-	],
-	"features": {
-    	"devcontainers.features.git": {} // Installs Git and sets useful defaults
-  }
+	]
+	
 }
