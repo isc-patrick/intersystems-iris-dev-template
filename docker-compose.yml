@@ -20,8 +20,13 @@ services:
     ports:
       - 8889:8888
     volumes:
-      - ./jupyter/notebooks:/home/jovyan/workspace
+      - type: bind
+        source: myapp
+        target: /home/jovyan/workspace
     command: start-notebook.py --NotebookApp.token=''
     depends_on: ['iris']
+
+volumes:
+  myapp:
 
 
